@@ -253,28 +253,28 @@ Target IP: 192.168.1.100
 │                                                         │
 │  [CLI Interface]                                        │
 │       ↓                                                 │
-│  [Input Validation]  ← User enters IP/CIDR             │
+│  [Input Validation]  ← User enters IP/CIDR              │
 │       ↓                                                 │
-│  [PHASE 1: SCANNER]   ← Nmap aggressive scan           │
-│       ├─ SYN Scan (-sS)                                │
-│       ├─ Service Detection (-sV)                       │
-│       └─ OS Detection (-O)                             │
+│  [PHASE 1: SCANNER]   ← Nmap aggressive scan            │
+│       ├─ SYN Scan (-sS)                                 │
+│       ├─ Service Detection (-sV)                        │
+│       └─ OS Detection (-O)                              │
 │       ↓                                                 │
-│  [PHASE 2: DATA ACQUISITION]  ← Query NVD API         │
-│       ├─ Product lookup                                │
-│       ├─ Retry logic with exponential backoff          │
-│       └─ Timeout handling                              │
+│  [PHASE 2: DATA ACQUISITION]  ← Query NVD API           │
+│       ├─ Product lookup                                 │
+│       ├─ Retry logic with exponential backoff           │
+│       └─ Timeout handling                               │
 │       ↓                                                 │
-│  [PHASE 3: PRIORITIZATION]  ← Semantic analysis       │
-│       ├─ Version matching                              │
-│       ├─ CVSS filtering                                │
-│       └─ False positive reduction                      │
+│  [PHASE 3: PRIORITIZATION]  ← Semantic analysis         │
+│       ├─ Version matching                               │
+│       ├─ CVSS filtering                                 │
+│       └─ False positive reduction                       │ 
 │       ↓                                                 │
-│  [PHASE 4: REPORTING]                                  │
-│       ├─ Executive summary generation                  │
-│       ├─ Detailed vulnerability breakdown              │
-│       ├─ File output (./scans/)                        │
-│       └─ Console summary display                       │
+│  [PHASE 4: REPORTING]                                   │
+│       ├─ Executive summary generation                   │
+│       ├─ Detailed vulnerability breakdown               │
+│       ├─ File output (./scans/)                         │
+│       └─ Console summary display                        │
 │                                                         │
 └─────────────────────────────────────────────────────────┘
 ```
@@ -504,54 +504,108 @@ chmod 755 scans
 
 ## 🤝 Contributing
 
-⚠️ **CONTRIBUTIONS ARE NOT ACCEPTED**
+**Contributions are welcome and encouraged!** X-Scan uses a **Community License** that allows anyone to contribute improvements, bug fixes, and enhancements.
 
-This software is **proprietary and strictly confidential**. Due to the restrictive nature of the proprietary license, the Owner does not accept:
-- Pull requests
-- Forks
-- Derivative works
-- Code contributions
-- Any modifications
+### How to Contribute
 
-### For Commercial Use
+1. **Fork** the repository on GitHub
+2. **Create** a feature branch (`git checkout -b feature/your-feature`)
+3. **Make** your changes and improvements
+4. **Test** thoroughly before submitting
+5. **Commit** with clear messages (`git commit -m 'Add your feature'`)
+6. **Push** to your fork (`git push origin feature/your-feature`)
+7. **Submit** a Pull Request to the main repository
 
-If you are interested in:
-- **Commercial licensing**
-- **Customization or modifications**
-- **Integration into your products**
-- **Custom features or enhancements**
+### Contribution Guidelines
 
-Please contact the Owner directly through the GitHub profile for licensing inquiries.
+- Follow **PEP 8** Python style guide
+- Add **docstrings** to new functions and classes
+- Include **type hints** where possible
+- Test your code and ensure no regressions
+- Update **README** if adding new features
+- Provide clear commit messages and PR descriptions
+- Respect the Community License terms
+
+### What We Accept
+
+✅ Bug fixes and patches
+✅ Performance improvements
+✅ New features and enhancements
+✅ Documentation improvements
+✅ Code refactoring and cleanup
+✅ Security hardening
+✅ Test coverage expansion
+✅ Integration with other tools
+
+### Attribution
+
+All contributors will be recognized in the project. By contributing, you agree to:
+- License your contributions under this **Community License**
+- Accept that your code may be used commercially with proper attribution
+- Allow the Creator (alfanowski) to integrate your changes into the main project
+
+### Questions?
+
+- Check existing [GitHub Issues](https://github.com/alfanoandrea/X-Scan/issues)
+- Start a discussion in [GitHub Discussions](https://github.com/alfanoandrea/X-Scan/discussions)
+- Contact the Creator directly if needed
 
 ---
 
 ## 📄 License
 
-**⚠️ PROPRIETARY SOFTWARE - NOT OPEN SOURCE**
+**Community License v1.0** - Owned by alfanowski
 
-This project is licensed under a **Strict Proprietary License** - see the LICENSE file for complete terms.
+X-Scan is distributed under a **Community License** that balances open-source collaboration with creator ownership.
 
-### Quick License Summary
+### License Summary
 
-This software is **proprietary and confidential**. Key restrictions:
+| Capability | Allowed |
+|-----------|---------|
+| **Use the Software** | ✅ Yes |
+| **Modify & Create Derivatives** | ✅ Yes |
+| **Distribute & Sublicense** | ✅ Yes |
+| **Commercial Use** | ✅ Yes |
+| **Fork on GitHub** | ✅ Yes |
+| **Contribute Improvements** | ✅ Yes |
+| **Reverse Engineer** | ✅ Yes |
+| **Security Research** | ✅ Yes |
+| **SaaS/Cloud Hosting** | ✅ Yes |
 
-- ✗ **NO distribution** to third parties
-- ✗ **NO commercial use** without written license
-- ✗ **NO modification** or derivative works
-- ✗ **NO reverse engineering** or decompilation
-- ✗ **NO public repository** forks or uploads
-- ✗ **NO usage as a service** (SaaS)
-- ✓ **Evaluation use only** (review, test, personal use)
-- ✓ **Internal use only** on systems you own/control
+### Key Requirements
 
-### Violations Will Result In:
-- Immediate license termination
-- Legal action and civil litigation
-- DMCA takedown notices
-- Damages and attorney fees
-- Criminal prosecution (where applicable)
+When using, modifying, or distributing X-Scan, you must:
 
-**For complete terms and commercial licensing inquiries, see the LICENSE file or contact the Owner.**
+1. **Maintain Attribution** - Include copyright notice: `© 2024-2025 alfanowski`
+2. **Include License** - Distribute this Community License with all copies
+3. **Document Changes** - Include a changelog noting your modifications
+4. **Keep it Open** - If distributing derivatives, license under this same Community License
+5. **Link Original** - Include a link to the original repository
+
+### Creator Ownership
+
+- **alfanowski** retains ownership of the original X-Scan source code
+- The Creator has final say on what gets merged into the main project
+- All contributors retain ownership of their contributions
+- Contributors grant the Creator a royalty-free license to use their work
+
+### No Licensing Fees
+
+- **Free to use** - No fees, royalties, or compensation required
+- **Free to modify** - Create and distribute derivatives at no cost
+- **Free to commercialize** - Build commercial products using X-Scan
+
+### Open Collaboration
+
+The Community License encourages:
+- 🍴 Forking and maintaining alternative versions
+- 🔧 Creating and sharing improvements
+- 🤝 Contributing bug fixes and features
+- 📚 Publishing research and findings
+- 💼 Building commercial products
+- 🔬 Security research and analysis
+
+**See the [LICENSE](LICENSE) file for complete legal terms.**
 
 ---
 
