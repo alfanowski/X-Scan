@@ -1,5 +1,5 @@
 version = "1.1.1"
-scriptURL = "https://raw.githubusercontent.com/alfanoandrea/X-Scan/main/xscan.py"
+scriptURL = "https://raw.githubusercontent.com/alfanowski/X-Scan/main/xscan.py"
 
 
 
