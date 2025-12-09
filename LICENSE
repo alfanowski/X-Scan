@@ -1,86 +1,96 @@
-PROPRIETARY SOFTWARE LICENSE AGREEMENT
+COMMUNITY LICENSE AGREEMENT WITH ATTRIBUTION
 X-Scan Network Vulnerability Scanner
 
 VERSION 1.0
 EFFECTIVE DATE: December 9, 2025
 
 ================================================================================
-PROPRIETARY NOTICE
+OWNERSHIP NOTICE
 ================================================================================
 
 This software ("X-Scan" or "Software") and all associated documentation,
-source code, binaries, and materials are proprietary and confidential property
-of alfanowski (hereinafter "Owner" or "Proprietor").
+source code, binaries, and materials are the property of alfanowski 
+(hereinafter "Owner" or "Creator").
 
-This Software is NOT open-source and is NOT licensed under any permissive license
-such as MIT, GPL, Apache, or similar.
+All contributors retain ownership of their contributions while the Owner retains
+overall ownership and control of the project.
+
+This is a Community License that encourages collaboration while protecting the
+Creator's original ownership and intellectual property rights.
 
 ================================================================================
 1. OWNERSHIP AND INTELLECTUAL PROPERTY RIGHTS
 ================================================================================
 
-1.1 EXCLUSIVE OWNERSHIP
-All intellectual property rights, including but not limited to copyright, patent
-rights, trade secrets, and all other proprietary rights in and to the Software,
-including any modifications, derivative works, or improvements thereto, are
-exclusively owned by alfanowski.
+1.1 CREATOR OWNERSHIP
+The original Source Code and core intellectual property of X-Scan are owned by
+alfanowski. The Creator retains the right to make final decisions regarding the
+project direction, release management, and integration of contributions.
 
-1.2 NO TRANSFER OF OWNERSHIP
-The User acknowledges that possession, installation, or execution of the Software
-does NOT constitute ownership or transfer of any intellectual property rights.
-All rights not expressly granted herein are retained by the Owner.
+1.2 CONTRIBUTOR RIGHTS
+Contributors retain ownership of their contributions and contributions are made
+available under this same license. By submitting a contribution, contributors
+grant the Creator a perpetual, irrevocable, worldwide, royalty-free license to
+use, modify, and distribute their contributions.
 
-1.3 PROTECTION
-The Owner shall take all necessary legal and technical measures to protect the
-proprietary nature and confidentiality of the Software.
+1.3 DERIVATIVE WORKS
+Derivative works and modifications may be created by the community. All derivative
+works must remain under this Community License and must attribute the original
+Creator (alfanowski).
 
 ================================================================================
 2. PERMITTED USE
 ================================================================================
 
-2.1 EVALUATION LICENSE ONLY
-The Software is provided on an "Evaluation License" basis only. Users are granted
-a non-exclusive, non-transferable, revocable, limited right to:
+2.1 COMMUNITY LICENSE GRANT
+Users are granted a non-exclusive, non-transferable, royalty-free right to:
 
-   a) Review the source code for evaluation purposes only
-   b) Execute the Software for personal testing and evaluation
-   c) Create local copies for backup purposes
-   d) Internal testing on systems you own or control
+   a) Review, study, and analyze the source code
+   b) Execute the Software for any lawful purpose
+   c) Create and distribute copies of the Software
+   d) Create derivative works and modifications
+   e) Distribute modified versions
+   f) Use the Software for personal, educational, and commercial purposes
+   g) Host the Software on public repositories
+   h) Use the Software in cloud environments or as a service
 
-2.2 LIMITATIONS
-The evaluation license does NOT grant the right to:
-   - Modify, alter, adapt, or create derivative works
-   - Distribute, sell, rent, lease, or transfer the Software
-   - Use the Software for commercial purposes
-   - Integrate the Software into other products or services
-   - Reverse-engineer, decompile, or disassemble the Software
-   - Remove or obscure any proprietary notices or labels
-   - Sublicense, assign, or delegate rights to third parties
-   - Host the Software on public repositories or servers
-   - Use the Software as a service (SaaS) or in cloud environments
-   - Benchmark or compare the Software against competitors
+2.2 ATTRIBUTION REQUIREMENTS
+All copies and derivative works must include:
+   - Original copyright notice: "© 2024-2025 alfanowski"
+   - This License Agreement
+   - A notice identifying modifications made
+   - Attribution to the Creator (alfanowski)
+   - A link to the original repository
 
-2.3 DURATION
-The evaluation license is effective until revoked by the Owner at any time
-without notice and without cause.
+2.3 RECIPROCAL OBLIGATION
+If you distribute the Software or derivative works publicly, you must:
+   - Provide the source code or a means to obtain it
+   - License your modifications under this same Community License
+   - Include clear attribution to alfanowski as the original Creator
+
+2.4 DURATION
+This license is perpetual and irrevocable except in cases of material breach.
 
 ================================================================================
 3. COMMERCIAL AND PRODUCTION USE
 ================================================================================
 
-3.1 PROHIBITION WITHOUT LICENSE
-Any use of the Software for commercial purposes, production environments, or
-revenue-generating activities is strictly prohibited without an explicit written
-Commercial License Agreement signed by the Owner.
+3.1 COMMERCIAL USE PERMITTED
+Commercial use, commercial distribution, and commercial deployment are explicitly
+permitted under this Community License, provided that:
 
-3.2 COMMERCIAL INQUIRIES
-For licensing inquiries regarding commercial use, deployment in production
-environments, or enterprise applications, contact the Owner directly.
+   a) All copies and derivative works maintain attribution to alfanowski
+   b) Modifications are licensed under this same Community License
+   c) Source code is made available
+   d) This License Agreement is included with all distributions
 
-3.3 UNAUTHORIZED COMMERCIAL USE
-Unauthorized commercial use constitutes a material breach and will result in
-immediate termination of all rights and may trigger legal action for damages,
-including but not limited to statutory damages and attorney fees.
+3.2 NO LICENSING FEES
+No fees, royalties, or other compensation are required for commercial use under
+this Community License.
+
+3.3 ENTERPRISE SUPPORT
+For enterprise support, custom development, or other services, contact the
+Creator directly through the project repository.
 
 ================================================================================
 4. SOURCE CODE AND CONFIDENTIALITY
@@ -109,71 +119,75 @@ architecture, or implementation details remain confidential.
 5. MODIFICATION AND DERIVATIVE WORKS
 ================================================================================
 
-5.1 STRICT PROHIBITION
-The User is strictly prohibited from:
-   - Modifying, adapting, or altering the Software in any way
-   - Creating derivative works, improvements, or enhancements
-   - Merging the Software with other code or software
-   - Applying patches, fixes, or updates not provided by the Owner
-   - Translating, compiling, or recompiling the Software
+5.1 MODIFICATIONS PERMITTED
+Users are permitted to:
+   - Modify, adapt, and alter the Software
+   - Create derivative works and improvements
+   - Merge the Software with other code
+   - Apply patches, fixes, and updates
+   - Compile and recompile the Software
 
 5.2 OWNERSHIP OF MODIFICATIONS
-Any modifications, improvements, or derivative works accidentally created shall
-be owned exclusively by the Owner, and the User hereby assigns all such rights
-to the Owner without compensation.
+Contributors retain ownership of their modifications and derivative works.
+Contributors license their contributions to the Creator under this Community
+License for integration into the project.
 
-5.3 FEEDBACK
-Any feedback, suggestions, or bug reports provided by the User shall become
-the exclusive property of the Owner and may be used without compensation or
-attribution.
+5.3 FEEDBACK AND CONTRIBUTIONS
+Feedback, suggestions, bug reports, and contributions are welcome and appreciated.
+By submitting contributions, you agree to license them under this Community License.
+Contributors may be credited in the project's contributor list.
 
 ================================================================================
 6. DISTRIBUTION AND TRANSFER
 ================================================================================
 
-6.1 NO DISTRIBUTION
-The User SHALL NOT distribute, sublicense, lease, rent, sell, transfer, or
-otherwise make available the Software to any third party.
+6.1 DISTRIBUTION PERMITTED
+Users are permitted to:
+   - Distribute the Software and derivative works
+   - Sublicense the Software under this Community License
+   - Lease, sell, or otherwise make available modified versions
+   - Host the Software on public repositories
+   - Create public forks and maintain separate versions
 
-6.2 NO PUBLIC REPOSITORY
-The User SHALL NOT upload, commit, or publish the Software to any public code
-repository (GitHub, GitLab, Bitbucket, SourceForge, etc.) without explicit
-written permission from the Owner.
+6.2 PUBLIC REPOSITORY GUIDELINES
+Users are encouraged to:
+   - Fork the repository and contribute improvements
+   - Create pull requests with enhancements and bug fixes
+   - Maintain derivative versions on GitHub or other platforms
+   - Share improvements with the community
+   - Submit changes back to the main project (optional but appreciated)
 
-6.3 GITHUB AND VERSION CONTROL
-   a) If the User has access to the Repository on GitHub, access is solely for
-      evaluation purposes
-   b) The User shall not fork, clone to public repositories, or create pull
-      requests without explicit authorization
-   c) Private forks are permitted only for evaluation purposes
-   d) Any public distribution will be treated as a material breach
+6.3 ATTRIBUTION IN DISTRIBUTION
+All distributed versions must include:
+   - Clear attribution to alfanowski as the original Creator
+   - This License Agreement in full
+   - A changelog documenting modifications
+   - A link to the original repository
 
-6.4 ENFORCEMENT
-The Owner actively monitors for unauthorized distribution. Violations will result
-in immediate legal action, including DMCA takedown notices and civil litigation.
+6.4 COMMUNITY COLLABORATION
+The Creator welcomes and encourages community participation, including forks,
+modifications, and public distribution, provided that this License is respected
+and attribution is maintained.
 
 ================================================================================
 7. REVERSE ENGINEERING AND SECURITY RESEARCH
 ================================================================================
 
-7.1 REVERSE ENGINEERING PROHIBITED
-The User is strictly prohibited from:
-   - Reverse-engineering, disassembling, or decompiling the Software
-   - Attempting to derive the underlying algorithms or architecture
-   - Performing static or dynamic code analysis for purposes of reproduction
-   - Security research or vulnerability analysis (see Section 7.3)
+7.1 ANALYSIS AND RESEARCH PERMITTED
+Users are permitted to:
+   - Reverse-engineer, disassemble, and decompile the Software
+   - Perform static and dynamic code analysis
+   - Conduct security research and vulnerability testing
+   - Derive and analyze algorithms and architecture
+   - Study the source code for educational purposes
 
-7.2 TECHNICAL PROTECTION MEASURES
-Any attempt to circumvent, bypass, or disable technical protection measures,
-encryption, or security features is prohibited and may violate applicable law.
-
-7.3 SECURITY RESEARCH EXCEPTION
-If the User identifies a security vulnerability, the User must:
-   a) Report the vulnerability exclusively to the Owner
-   b) Not disclose the vulnerability to third parties
-   c) Not publicly describe the vulnerability for 90 days after reporting
-   d) Allow the Owner reasonable time to develop and deploy a fix
-   e) Accept the Owner's determination of whether to publish or keep confidential
+7.2 SECURITY RESEARCH AND RESPONSIBLE DISCLOSURE
+If the User identifies a security vulnerability:
+   a) The User may report it to the Creator for coordination
+   b) The User is welcome to publicly disclose vulnerabilities
+   c) Responsible disclosure practices are encouraged but not required
+   d) The Creator will attempt to address reported issues in a timely manner
+   e) The User may publish research and findings, with or without prior notification
 
 ================================================================================
 8. INTELLECTUAL PROPERTY INDEMNITY
@@ -291,26 +305,20 @@ indemnification survive termination indefinitely.
 12. MONITORING AND ENFORCEMENT
 ================================================================================
 
-12.1 ACTIVE MONITORING
-The Owner reserves the right to monitor compliance with this License, including:
-   a) Monitoring for unauthorized distribution and public repositories
-   b) Tracking commercial use or attempts to commercialize
-   c) Investigating potential violations
-   d) Taking legal action when necessary
+12.1 COMMUNITY STANDARDS
+The Creator encourages compliance with this License through community standards and
+best practices rather than active monitoring or enforcement.
 
-12.2 AUDIT RIGHTS
-The Owner reserves the right to audit the User's use and possession of the
-Software upon reasonable notice.
+12.2 ATTRIBUTION VERIFICATION
+The Creator may verify that proper attribution is maintained in public distributions
+and may request corrections if attribution is omitted or misrepresented.
 
-12.3 LEGAL ACTION
-Breach of this License may result in:
-   - Immediate revocation of all rights
-   - Cease-and-desist orders
-   - Civil litigation for damages
-   - Injunctive relief
-   - Criminal prosecution (where applicable)
-   - DMCA takedown notices (for public distribution)
-   - Payment of the Owner's legal fees and costs
+12.3 BREACH RESOLUTION
+In case of material breach:
+   a) The Creator will notify the violator of the breach
+   b) The violator will be given a reasonable opportunity to cure the breach
+   c) If the breach cannot be cured, the Creator may pursue legal remedies
+   d) Minor attribution issues will be handled cooperatively
 
 ================================================================================
 13. EXPORT COMPLIANCE
@@ -406,16 +414,18 @@ for which monetary damages are an inadequate remedy. Either party may seek
 injunctive relief in addition to other remedies.
 
 ================================================================================
-19. CONTACT AND LICENSE INQUIRIES
+19. CONTACT AND SUPPORT
 ================================================================================
 
-For questions regarding this License or to inquire about Commercial Licenses,
-contact the Owner through the GitHub profile:
+For questions regarding this License, contributions, or support, contact the
+Creator through the GitHub profile:
 https://github.com/alfanoandrea
 
-COMMERCIAL LICENSE INQUIRIES:
-- Contact: [Your contact method]
-- Do NOT use the Software commercially without explicit written permission
+CONTRIBUTIONS:
+- Issues and bug reports: Use GitHub Issues
+- Feature requests: Use GitHub Discussions
+- Code contributions: Submit Pull Requests
+- All contributions welcome under this Community License
 
 ================================================================================
 20. ACKNOWLEDGMENT AND ACCEPTANCE
@@ -423,20 +433,21 @@ COMMERCIAL LICENSE INQUIRIES:
 
 BY DOWNLOADING, INSTALLING, OR EXECUTING THE SOFTWARE, THE USER ACKNOWLEDGES
 HAVING READ, UNDERSTOOD, AND AGREED TO BE BOUND BY ALL TERMS AND CONDITIONS OF
-THIS PROPRIETARY LICENSE AGREEMENT.
+THIS COMMUNITY LICENSE AGREEMENT.
 
-IF THE USER DOES NOT AGREE TO THESE TERMS, THE USER SHALL NOT USE THE SOFTWARE
-AND SHALL DELETE ALL COPIES IMMEDIATELY.
+IF THE USER DOES NOT AGREE TO THESE TERMS, THE USER MAY NOT USE THE SOFTWARE.
+However, this license is permissive and welcomes community participation.
 
 ================================================================================
 
-PROPRIETARY SOFTWARE - ALL RIGHTS RESERVED
+COMMUNITY SOFTWARE - OWNED BY alfanowski
 © 2024-2025 alfanowski
 
-This license is effective immediately and remains in effect until terminated
-by the Owner.
+This license is effective immediately and remains in perpetual effect.
+Creator: alfanowski (https://github.com/alfanoandrea)
+Repository: https://github.com/alfanoandrea/X-Scan
 
-Version: 1.0
+Version: 1.0 (Community Edition)
 Last Updated: December 9, 2025
 
 ================================================================================
