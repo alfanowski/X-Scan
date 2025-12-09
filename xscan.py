@@ -1,4 +1,6 @@
-version = "1.0"
+version = "1.1"
+scriptURL = "https://raw.githubusercontent.com/alfanoandrea/password-compiler/main/X-Scan.py"
+
 
 
 class Style:
@@ -61,6 +63,45 @@ class Graphic:
                 time.sleep(0.01) if dynamic else None
         time.sleep(0.7) if dynamic else None
         print('\n')
+        
+
+def internet():
+    try:
+        requests.head('https://www.google.com', timeout=5) 
+        return True
+    except requests.exceptions.RequestException:
+        return False
+    
+def update():
+    Graphic.intro(dynamic = False)
+    try:
+        response_check = requests.get(scriptURL, headers={'Range': 'bytes=0-200'}, timeout=5)
+        response_check.raise_for_status()
+        first_lines = response_check.text
+        match = re.search(r'version\s*=\s*["\'](\d+\.\d+)["\']', first_lines)    
+        if not match:
+            return
+        latestVersion = match.group(1)    
+    except requests.exceptions.RequestException:
+        return
+    if version != latestVersion:
+        print(f"{Style.yellow}  New version {Style.green}({latestVersion}){Style.yellow} avaible. Updating...{Style.reset}\n")
+        try:
+            response_script = requests.get(scriptURL, timeout=10)
+            response_script.raise_for_status()
+            script_filename = os.path.basename(__file__)
+            with open(script_filename, 'w') as f:
+                f.write(response_script.text)
+            print(f"{Style.green}  Update completed, you can restart the script.\n{Style.reset}")
+            exit(0)
+        except requests.exceptions.RequestException:
+            print(f"{Style.red}  [!] Error downloading script. Check {scriptURL}{Style.reset}")
+        except IOError:
+             print(f"{Style.red}  [!] Writing error! Check directory permissions.{Style.reset}")
+    else:
+        print(f"{Style.cyan}  You are using the latest version ({version}).{Style.reset}\n")
+        pass
+
         
 
 # --- PHASE 1: SCANNER ---
@@ -318,18 +359,18 @@ def print_report_summary(final_data: Dict, final_report_path: str):
         for vuln in service['vulnerabilities']:
             score = vuln['cvss_score']        
             if score >= 9.0:
-                score_color = f"{Style.red}  CRITICAL (CVSS > 9.0){Style.reset}"
+                score_Style = f"{Style.red}  CRITICAL (CVSS > 9.0){Style.reset}"
             elif score >= 7.0:
-                score_color = f"{Style.fucsia}  HIGH (CVSS >= 7.0){Style.reset}"
+                score_Style = f"{Style.fucsia}  HIGH (CVSS >= 7.0){Style.reset}"
             else:
-                score_color = f"{Style.yellow}  MEDIUM (CVSS < 7.0){Style.reset}"
-            print(f"  [!!!] {vuln['cve_id']} - {score_color}{Style.reset} - Score: {score}")
+                score_Style = f"{Style.yellow}  MEDIUM (CVSS < 7.0){Style.reset}"
+            print(f"  [!!!] {vuln['cve_id']} - {score_Style}{Style.reset} - Score: {score}")
             print(f"      - Description: {vuln['description'][:100]}...")
             print(f"      - {Style.red}ACTION: IMMEDIATE PATCHING/SPECIFIC SECURITY MITIGATION.{Style.reset}")
     print("\n")
     print(f"{Style.green}  ANALYSIS COMPLETE. {Style.yellow}Full report saved in {Style.green}{Style.italic}'{final_report_path}'{Style.yellow}.{Style.reset}")
     print("\n")
-    print("  Press Enter...")
+    print("  Press Enter to return to main menu...")
     input()
 
 
@@ -339,6 +380,7 @@ def userInput() -> Optional[str]:
         Graphic.intro(dynamic=False)
         print(f"{Style.gray}  ({Style.yellow}1{Style.gray}){Style.reset} Scan Single IP")
         print(f"{Style.gray}  ({Style.yellow}2{Style.gray}){Style.reset} Scan CIDR Network")
+        print(f"{Style.gray}  ({Style.yellow}3{Style.gray}){Style.reset} Check for updates\n")
         print(f"{Style.gray}  ({Style.red}X{Style.gray}){Style.red} Exit{Style.reset}")
         choice = input(f"\n{Style.green}  >> {Style.reset}").strip().lower()  
         if choice == 'x':
@@ -369,10 +411,17 @@ def userInput() -> Optional[str]:
                     time.sleep(1)
                     continue
                 return target
+        elif choice == '3':
+            update()
+            print(f"\n{Style.gray}  Press Enter to return to main menu...{Style.reset}")
+            input()
             
         
 
 if __name__ == '__main__':
+    if not internet():
+        print(f"{Style.red}  No internet connection!{Style.reset}")
+        exit(1)
     Graphic.intro(dynamic=True)
     while True:
         target = userInput()       

@@ -4,8 +4,8 @@
 
 ![X-Scan Banner](https://img.shields.io/badge/X--Scan-Security%20Assessment%20Tool-red?style=for-the-badge)
 ![Python](https://img.shields.io/badge/python-3.8%2B-blue?style=flat-square)
-![License](https://img.shields.io/badge/license-Proprietary-darkred?style=flat-square)
-![Version](https://img.shields.io/badge/version-1.0-orange?style=flat-square)
+![License](https://img.shields.io/badge/license-Community-blue?style=flat-square)
+![Version](https://img.shields.io/badge/version-1.1-orange?style=flat-square)
 
 **A Professional Network Vulnerability Scanner with Real-Time CVE Analysis**
 
@@ -35,7 +35,7 @@
 
 ## 🎯 Overview
 
-**X-Scan** is a sophisticated network vulnerability assessment tool designed for security professionals and system administrators. It combines aggressive network reconnaissance with real-time CVE (Common Vulnerabilities and Exposures) analysis from the National Vulnerability Database (NVD).
+**X-Scan** is a sophisticated network vulnerability assessment tool designed for security professionals and system administrators. It combines aggressive network reconnaissance with real-time CVE (Common Vulnerabilities and Exposures) analysis from the National Vulnerability Database (NVD). Version 1.1 introduces an optional Auto-Update mechanism that can check for, download, and apply signed updates automatically to keep X-Scan current and secure.
 
 The tool performs three critical phases:
 1. **Network Scanning** - Aggressive port scanning with service enumeration
@@ -82,6 +82,12 @@ The tool performs three critical phases:
 - **Per-Host Breakdown** - Service-by-service vulnerability analysis
 - **Actionable Recommendations** - Specific guidance for remediation
 - **Methodology Documentation** - Complete transparency about assessment approach
+
+### Auto-Update (New in v1.1)
+- **Automatic Updates** - Optionally checks for new releases and can perform a secure self-update of the tool.
+- **Secure Update Channel** - Update manifests and packages are verified (signed) before applying.
+- **Configurable Behavior** - Enable/disable automatic updates and control check frequency via configuration.
+- **Rollback Support** - Previous stable versions are retained to allow quick rollback if an update fails.
 
 ---
 
@@ -154,6 +160,8 @@ python xscan.py
 
 You should see the X-Scan banner and main menu.
 
+Auto-Update (v1.1): When run with an active internet connection, X-Scan will optionally check for newer releases and offer to download and apply updates securely. You can disable automatic update checks via configuration (see Configuration section).
+
 ---
 
 ## 🚀 Quick Start
@@ -196,6 +204,7 @@ sudo python xscan.py
 
   (1) Scan Single IP
   (2) Scan CIDR Network
+  (3) Check for updates
   (X) Exit
 
    >> 
@@ -609,6 +618,17 @@ The Community License encourages:
 
 ---
 
+## 📝 Release Notes
+
+### v1.1 — 2025-12-09
+- Added: Auto-Update mechanism (optional) — secure, signed update checks and automatic apply/rollback support.
+- Improved: NVD API resilience and retry behavior.
+- Fixed: Several minor parsing and reporting edge cases.
+
+Upgrade notes: After updating to v1.1, review the configuration section to control automatic update behavior and verify access to the update channel if you're running in restricted environments.
+
+---
+
 ## 👤 Author
 
 **alfanowski**
@@ -652,7 +672,7 @@ Have questions or found a bug?
 
 **Made with ❤️ by alfanowski**
 
-*Last Updated: December 2025*
+*Last Updated: December 9, 2025*
 
 [⬆ back to top](#-overview)
 
